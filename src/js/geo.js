@@ -24,7 +24,7 @@ export default class GeoLocation {
             this.err = 'Невозможно получить местоположение';
             this.status = false;
             reject();
-          },
+          }
         );
       }
     });
