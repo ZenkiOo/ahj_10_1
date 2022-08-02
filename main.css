@@ -1,0 +1,41 @@
+body {
+  color: #999;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+.label{
+  margin-top: 10px;
+}
+.post {
+  max-width: 460px;
+  padding: 0.5rem 0.75rem 1rem 0.75rem;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.popupbody {
+  padding: 20px;
+  background-color: #fff;
+}
